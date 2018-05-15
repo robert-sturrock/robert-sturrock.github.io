@@ -45,6 +45,10 @@ blockquote {
   margin-top: 60px;
 }
 
+.border-img { 
+   border:2px solid #212529;
+}
+
 .caption {
   font-size: 14px;
   font-style: italic;
