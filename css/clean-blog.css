@@ -49,6 +49,10 @@ blockquote {
    border:2px solid #212529;
 }
 
+.circle-img {
+    border-radius: 50%;
+}
+
 .caption {
   font-size: 14px;
   font-style: italic;
