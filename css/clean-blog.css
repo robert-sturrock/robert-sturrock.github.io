@@ -53,6 +53,15 @@ blockquote {
     border-radius: 50%;
 }
 
+.ingredients { 
+  line-height: 0.85;
+}
+
+.hr2 { 
+    border-top: white;
+    border-bottom: white;
+ }
+
 .caption {
   font-size: 14px;
   font-style: italic;
@@ -228,6 +237,8 @@ header.masthead .site-heading h1 {
   font-size: 50px;
   margin-top: 0;
 }
+
+
 
 header.masthead .page-heading .subheading,
 header.masthead .site-heading .subheading {
