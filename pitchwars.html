@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Clean Blog - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/whatsapp-convo.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Personal Projects</h1>
+              <span class="subheading">Playing around with data</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <h1> Pitchwars competition - agent responses </h1>
+            <hr class = "hr2">
+
+            <p> <a href="https://robertms.shinyapps.io/whatsapp_analytics_tool/"> Our findings</a>  </p>
+
+            <p> This fall my girlfriend took part in Pitchwars - a writing competition designed to help aspiring authors find an agent.</p>
+
+            <p> <b> The gist:</b> In August over 3000 writers enter Pitchwars, hoping to have their manuscript selected by one of around 150 authors. Each authors volunteers their time and expertise to help edit one aspiring author's manuscript for an agent showcase in early November. </p>
+
+            <p> The final stage of that contest - the showcase - is very tense. Aspiring authors put a 150 word pitch up on the Pitchwars website and agents who like it request the book. Naturally the participants want to know how many requests they are getting, how it compares to others, and which agents are requesting lots of books (as this will likely impact how quickly they hear back from a particular agent). But there's no way to get that data easily without looking at every entry manually on the website. And that's a pain. </p>
+
+            <p> So my friend Liam and I teamed up to help provide some of the data people were looking for! We scraped the data from the Pitchwars website and then producted some summary stats (linked above). Pretty simple stuff - but it was well recieved! </p>
+
+
+            <p>One of the quick things it helped illuminate is that while some people had lots of agent comments it wasn't uncommon to have very few. In fact almost half of people had 0-5 comments. Seeing that point illustrated clearly helped a lot of people feel better about not receieving 30+ requests. </p>
+            <a href="#">
+              <img class="img-fluid img-border " src="img/comments.jpg" alt="Pitchwars comments">
+            </a>
+            <span class="caption text-muted">Number of comments broken down by genre (YA: young adult, MG: middle grade, A: adult) </span>
+
+
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+
+    </footer>
+
+    <!-- Add in repeated elements -->
+    <div id="includedContent"></div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+    <script> 
+    $(function(){
+      $("#includedContent").load("repeated-elements.html"); 
+    });
+    </script> 
+
+  </body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Clean Blog - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/whatsapp-convo.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Personal Projects</h1>
+              <span class="subheading">Playing around with data</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!-- Post Content -->
+    <article>
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <h1> WhatsApp conversation analyser </h1>
+            <hr class = "hr2">
+
+            <p> <a href="https://robertms.shinyapps.io/whatsapp_analytics_tool/">Skip straight to the app</a>  </p>
+
+            <p> I got the idea for this project during the second year of my masters degree. Two of my close friends - Debbie and Liam - and I had a very active WhatsApp conversation, one that I thought would cover most of my experiences at Oxford. At one point I downloaded the message thread to check the number of words and came up with something around 110,000. We'd basically written a short novel through our phones. </p>
+
+            <p>But other than scrolling through it there wasn't an easy way for me to pick out what we'd talked about or find a particular conversation. So I built something to do it.  </p>
+
+            <p> The web app I built makes use of Rstudio's Shiny package, ggplot, and the visNetwork package. Once you upload a conversation it will show you a number of things. The first is a conversation network - essentially who messaged and who responded - for the entire conversation. </p>
+
+            <a href="#">
+              <img class="img-fluid img-border " src="img/network.jpg" alt="network">
+            </a>
+            <span class="caption text-muted">Node size is proportional to # of messages sent. Lines (and thickness) indicate number of messages between two participants. </span>
+
+
+            <p>On the second tab it shows word frequency and share of the conversation. I also added in a feature so you can smooth over a number of days.</p>
+
+            <a href="#">
+              <img class="img-fluid img-border " src="img/number-messages.jpg" alt="talking">
+            </a>
+            <span class="caption text-muted">30-day moving average of number of messages sent to the group per day. Debbie is a star contributor. </span>
+
+            <p> On the final tab you can search for particular bits of the conversation. Say I wanted to see when we'd talked about breakups. I could search "breakup" and see when the word was mentioned.</p>
+
+            <a href="#">
+              <img class="img-fluid img-border " src="img/breakup1.jpg" alt="talking">
+            </a>
+
+
+            <p> Then once I've found the mentions I can enter a particular line number and click over to the "context" tab and see messages either side of the particular mention.</p>
+
+            <a href="#">
+              <img class="img-fluid img-border " src="img/breakup2.jpg" alt="talking">
+            </a>
+
+            <p> Want to play around? It works with any iPhone based WhatsApp conversation (you can download one in txt form directly from the WhatsApp app).  </p>
+
+            <p> <a href="https://robertms.shinyapps.io/whatsapp_analytics_tool/">Here's the link</a>  </p>
+
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <hr>
+
+
+    </footer>
+
+    <!-- Add in repeated elements -->
+    <div id="includedContent"></div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+    <script> 
+    $(function(){
+      $("#includedContent").load("repeated-elements.html"); 
+    });
+    </script> 
+
+  </body>
+
+</html>
